@@ -27,3 +27,9 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+ @layer components {
+    .btn{
+        @apply bg-base border text-black border-gray-400 py-2  rounded-lg;
+    }
+}
