@@ -12,4 +12,14 @@
 
 +( function() {
   console.log('Hello, UOC!');
+  
+
 } )();
+
+const button_hambuerger = document.querySelector('#hamburger');
+const menu = document.querySelector('#menu');
+
+button_hambuerger.addEventListener('click', ()=>{
+  menu.classList.toggle('hidden');
+})
+

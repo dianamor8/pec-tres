@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/styles/main.scss"
-        />
-        <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
-    </head>
-    <body class="py-8 text-teal-800 bg-teal-100">
-        <div class="container">
-            <img
-                src="assets/images/logo.png"
-                alt="Universitat Oberta de Catalunya"
-                class="max-w-xs"
-            />
-            <h1
-                class="mb-4 uoc-title font-serif font-bold text-4xl text-center"
-            >
-                Hello, UOC!
-            </h1>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Ecuador Musical Festival</title>
+</head>
+
+<body class="m-0">
+
+    <header>
+        <nav class="bg-base flex items-center justify-between p-5 flex-wrap">
+            <div class="flex items-center flex-shrink-0 mr-6">
+                <a class="" href="./index.html">
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                    Music Fest
+                </a>
+            </div>
+
+            <div class="block sm:hidden">
+                <button id="hamburger" class="flex items-center px-2 py-1 border rounded text-gray-500">
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="menu" class="sm:flex justify-end flex-col sm:flex-row lg:w-auto nav_items hidden">
+                <a href="#" class="block py-1 lg:inline-block lg:mt-0 mx-4">Artist </a>
+                <a href="#" class="block py-1 lg:inline-block lg:mt-0 mx-4">About </a>
+                <a href="#" class="block py-1 lg:inline-block lg:mt-0 mx-4">Contact </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-grid m-0 grid justify-items-center align-middle">
+        <div class="p-3 m-3">
+            <h1 class="main-grid__h1 text-4xl sm:text-5xl md:text-6xl text-center">Ecuador Musical Festival</h1>
+        </div>
+        <div class="flex justify-center w-3/5 m-auto">
+            <iframe class="min-w-full h-vframesm sm:h-vframesm md:h-vframemd lg:h-vframelg"
+                src="https://www.youtube.com/embed/mz5kY3RsmKo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="max-w-1/2 text-center my-10 text-white">
+            <h2 class="main-grid__info--title text-center text-2xl sm:text-3xl md:text-4xl">DISFRUTA DE MÚSICA EN VIVO
+            </h2>
+            <p><strong>Fecha:</strong> 11 de Diciembre de 2020 | <strong> Hora:</strong> 20h00</p>
+            <div>
+                <small>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to
+                    make a type specimen book.
+                </small>
+            </div>
+            <br>
+            <div class="grid gap-2 grid-cols-1 sm:grid-cols-3">
+                <button type="button"
+                    class="bg-base border text-black border-gray-400 py-2  rounded-lg">Registrarse</button>
+                <button type="button" class="bg-base border text-black border-gray-400 py-2  rounded-lg">+Info</button>
+                <button type="button"
+                    class="bg-base border text-black border-gray-400 py-2  rounded-lg">Compartir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 px-5 flex flex-col bg-complement">
+        <div class="text-white text-center">
             <p>
-                This is a starter template for the Advanced HTML and CSS Tools
-                courses from the Master's Program in Multimedia Applications and
-                the Master's Program in Web App and Website Development at the
-                Universitat Oberta de Catalunya.
+                <small>
+                    ¿Quieres ser parte del staff de organización?, registrate <a href="#" class="text-center"> <i
+                            class="far fa-hand-point-right"></i> aquí <i class="far fa-hand-point-left"></i></a>
+                </small>
             </p>
         </div>
-        <script src="./assets/scripts/main.js"></script
-        ><!-- do not remove this line! -->
-    </body>
+        <h3 class="text-4xl sm:text-4xl text-white text-center my-5">Auspiciantes</h3>
+        <div class="mx-7 grid gap-4 justify-center md:grid-cols-5 sm:grid-cols-3 grid-cols-1 ">
+            <div class="flex justify-center h-full sm:h-3/5"><img class="max-w-1/2 sm:max-w-full max-h-1/2"
+                    src="./assets/images/logo6.png" alt=""></div>
+            <div class="flex justify-center h-full sm:h-3/5"><img class="max-w-1/2 sm:max-w-full max-h-1/2"
+                    src="./assets/images/logo3.png" alt=""></div>
+            <div class="flex justify-center h-full sm:h-3/5"><img class="max-w-1/2 sm:max-w-full max-h-1/2"
+                    src="./assets/images/logo6.png" alt=""></div>
+            <div class="flex justify-center h-full sm:h-3/5"><img class="max-w-1/2 sm:max-w-full max-h-1/2"
+                    src="./assets/images/logo5.png" alt=""></div>
+            <div class="flex justify-center h-full sm:h-3/5"><img class="max-w-1/2 sm:max-w-full max-h-1/2"
+                    src="./assets/images/logo6.png" alt=""></div>
+        </div>
+        <hr>
+        <div class="flex flex-col sm:flex-row mx-4 my-4 text-white justify-center items-center">
+            <div class="flex-1 my-2">
+                <a href="./index.html" class="footer-grid__pages--a">
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                    Music Fest
+                </a>
+            </div>
+            <div class="flex-1 flex gap-4 my-2">
+                <a  href="#">Artist</a>
+                <a  href="#">About Us</a>
+                <a  href="#">Contact</a>
+            </div>
+            <div class="block my-2">
+                <a href="https://myaccount.google.com/intro/profile"><i
+                        class="fab fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/login?lang=es"><i class="fab fa-twitter"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
