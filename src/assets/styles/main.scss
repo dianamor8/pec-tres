@@ -32,4 +32,8 @@
     .btn{
         @apply bg-base border text-black border-gray-400 py-2  rounded-lg;
     }
+
+    .nav-item{
+        @apply block py-1 lg:inline-block lg:mt-0 mx-4;
+    }
 }
